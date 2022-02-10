@@ -15,8 +15,7 @@
 <!-- HIER KOMT DE DROPDOWN MENU"-->
 <?php include "menudeel.php" ?>
 
-<!-- dit is hoe php werkt-->
-<?php echo "Dit is hoe php werkt" ?>
+
 
 
 <script>

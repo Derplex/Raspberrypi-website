@@ -7,6 +7,7 @@
 
 </header>
 <body>
-  <h1>Dit is voor de Raspberry</h1>
   <?php include "menudeel.php"?>
+  <h1>Dit is voor de Raspberry</h1>
+
 </body>
