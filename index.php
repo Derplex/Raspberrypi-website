@@ -10,11 +10,17 @@
 <body>
 <?php echo "Dit is hoe php werkt" ?>
 
+<!-- HIER KOMT DE DROPDOWN MENU"-->
+<?php include "menudeel.php" ?>
+
+
+
+
 <script>
 //hier kan je javascript typen
 </script>
 <!-- of je kan javascript van een bestand hier krijgen:-->
-<script type="text/javascript" src="hetbestand.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
 
   <h1>JE MAMA IS NIET HALLAL</h1>
   <p>gisteren is door de FBI geconstateerd dat je mama niet hallal is. Verdere informatie volgt nog</p>
