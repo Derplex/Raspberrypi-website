@@ -7,6 +7,14 @@
 
 </header>
 <body>
+<?php echo "Dit is hoe php werkt" ?>
+
+<script>
+//hier kan je javascript typen
+</script>
+<!-- of je kan javascript van een bestand hier krijgen:-->
+<script type="text/javascript" src="hetbestand.js"></script>
+
   <h1>JE MAMA IS NIET HALLAL</h1>
   <p>gisteren is door de FBI geconstateerd dat je mama niet hallal is. Verdere informatie volgt nog</p>
 </body>
