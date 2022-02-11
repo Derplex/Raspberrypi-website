@@ -26,4 +26,6 @@
 
   <h1>JE MAMA IS NIET HALLAL</h1>
   <p>gisteren is door de FBI geconstateerd dat je mama niet hallal is. Verdere informatie volgt nog</p>
+  <p>UPDATE: Na een lange, geweldadige achtervolging op de A69 hebben 420 politiemannen je moeder te pakken gekregen. Na een empirisch
+    onderzoek is gebleken dat ze niet voldeed aan de hallal regels. Spoedig volgt een vervolg.</p>
 </body>
