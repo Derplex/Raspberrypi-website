@@ -7,6 +7,7 @@
 
 </header>
 <body>
-  <h1>Dit is een scherm (met de raspberry aangestuurd 64x128 oled schermpje)</h1>
   <?php include "menudeel.php"?>
+  <h2>Dit is een scherm (met de raspberry aangestuurd 64x128 oled schermpje)</h2>
+
 </body>

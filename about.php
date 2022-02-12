@@ -1,13 +1,14 @@
 <html lang=nl-NL>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <header>
-<title>je mama</title>
+<title>Dit zie je toch niet</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
 
 </header>
 <body>
   <?php include "menudeel.php"?>
-  <h2>Dit is een lampje</h2>
+  <h2>Dit zijn wij:</h2>
+  <p class="easteregg" >JE MAMA</p>
 
 </body>

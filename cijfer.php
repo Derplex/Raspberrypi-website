@@ -7,6 +7,7 @@
 
 </header>
 <body>
-  <h2>Hier kan je berekenen welk cijfer je moet halen in je volgende toets om een bepaald gemiddelde te staan</h2>
   <?php include "menudeel.php"?>
+  <h2>Hier kan je berekenen welk cijfer je moet halen in je volgende toets om een bepaald gemiddelde te staan</h2>
+
 </body>

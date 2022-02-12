@@ -7,6 +7,7 @@
 
 </header>
 <body>
-  <h2>Je gemiddelde precies berekenen</h2>
   <?php include "menudeel.php"?>
+  <h2>Je gemiddelde precies berekenen</h2>
+  
 </body>
