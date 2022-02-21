@@ -6,6 +6,7 @@
   <div class="raspberry">
     <a href="lampje.php">Lampje</a>
     <a href="scherm.php">Scherm</a>
+    <a href="mrslampje.php">Morse</a>
   </div>
   </li>
 

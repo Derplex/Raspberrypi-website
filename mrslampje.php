@@ -9,12 +9,12 @@
 <body>
   <?php include "menudeel.php"?>
 
-  <h2 class="subtitel">Dit is een lampje</h2>
+  <h2 class="subtitel">Hier kan je een text omzetten naar morse</h2>
 
 
   <form method="post" >
-    <input type="submit" name="status" value="aan">
-    <input type="submit" name="status" value="uit">
+    <input type="text" name="morse" class="input"></input><br>
+    <input type="submit" class="input"></input>
   </form>
 
   <?php
@@ -27,14 +27,11 @@
   return $data;
   }
 
-  $a=test_input($_POST["status"]);
-  if ($a=="aan"){
-  passthru("/home/pi/lampje.py \"aan\"");
-} else if ($a=="uit"){
-  passthru("/home/pi/lampje.py \"uit\"");
-} else {
-  echo "<script>alert(\"dont try to hack me\")";
-}
+  $a=test_input($_REQUEST["morse"]);
+  if ($a){
+      $b= str_replace('_',' ',$a);
+      passthru("/home/pi/morseweb.py \"$b\"");
+  }
 
    ?>
 

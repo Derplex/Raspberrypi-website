@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import time
 import RPi.GPIO as GPIO
@@ -11,7 +12,6 @@ def lampje(status):
         print("gelukt")
     except:
         print("werkt niet")
-        return("werkt niet")
     
     
     if status=="aan":

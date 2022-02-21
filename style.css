@@ -4,6 +4,10 @@ body {
 path {
   fill: transparent;
 }
+.input {
+  text-align:center;
+  
+}
 .titel {
   text-align:center;
   font-size:80px;
@@ -13,7 +17,14 @@ path {
 .centreren {
   text-align: center;
 }
-
+.subtitel {
+  text-align:center;
+  color:red;
+}
+.cijfersmm {
+  height:22px;
+  width:22px;
+}
 ul.dropdownmenu {
   padding:0;
   margin:0;
