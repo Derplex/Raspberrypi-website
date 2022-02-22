@@ -8,7 +8,9 @@
 </header>
 <body>
   <?php include "menudeel.php"?>
-  <h2>Dit zijn wij:</h2>
-  <p class="easteregg" >JE MAMA</p>
+  <h1 class="titel">Dit zijn wij</h1>
+  <h4 style="text-align:center">Klik <a class="prank" target="_blank" title="Dit is echt geen prank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">hier</a> voor onze andere website</h4>
+
+
 
 </body>

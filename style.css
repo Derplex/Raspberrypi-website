@@ -6,13 +6,12 @@ path {
 }
 .input {
   text-align:center;
-  
+
 }
 .titel {
   text-align:center;
   font-size:80px;
   color:red;
-  font-family: 'Luckiest Guy', cursive;
 }
 .centreren {
   text-align: center;
@@ -52,9 +51,10 @@ ul.dropdownmenu {
   width:auto;
   text-align:center;
   display:inline-block;
-  float:left;
+  float:right;
   cursor:pointer;
 }
+
 .about a {
   color:black;
   padding: 12px 16px;
@@ -66,12 +66,14 @@ ul.dropdownmenu {
   width:auto;
   text-align: center;
   display:inline-block;
+  float:left;
   cursor:pointer;
 }
 .drpdwnsch {
   width:auto;
   text-align: center;
   display:inline-block;
+  float:left;
   cursor:pointer;
 
 }
@@ -146,15 +148,7 @@ li a:hover {
   display:block;
 }
 
-.easteregg {
-  display:hidden;
-  width:20px;
-  height:20px;
+.prank {
   text-align:center;
-  font-size:5px;
-
-}
-.easteregg:hover{
-  display:block;
-  background-color:red;
+  color:black;
 }

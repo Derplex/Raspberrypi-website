@@ -1,11 +1,8 @@
 import board
 import digitalio
 from PIL import Image, ImageDraw, ImageFont
-import PIL
 import adafruit_ssd1306
-import xmlrpc.server
-from xmlrpc.server import SimpleXMLRPCServer
-from xmlrpc.server import SimpleXMLRPCRequestHandler
+
 import sys
 
 oled_reset = digitalio.DigitalInOut(board.D4)
@@ -20,14 +17,25 @@ oled = adafruit_ssd1306.SSD1306_I2C(WIDTH, HEIGHT, i2c, addr=0x3C, reset=oled_re
 
 
 def tekentext(text):
-    plaatje=Image.new("1",(oled.width,oled.height))
-    textplt=ImageDraw.Draw(plaatje)
-    textplt.text((0,0),text,fill=255)
     
+    image = Image.new("1", (oled.width, oled.height))
+
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.load_default()
+    (font_width, font_height) = font.getsize(text)
+    draw.text(
+        ( (oled.width // 2 - font_width // 2) , (oled.height // 2 - font_height // 2) ),
+        text,
+        font=font,
+        fill=255,
+    )
     
+    # Display image
+    oled.image(image)
+    oled.show()
     
 if __name__== '__main__':
-    tekentext(sys.argv[1])
+    tekentext(str(sys.argv[1]))
 
 
 
