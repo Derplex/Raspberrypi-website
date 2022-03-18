@@ -39,6 +39,7 @@ ul.dropdownmenu {
   width:auto;
   text-align: center;
   display:inline-block;
+  float:left;
   cursor:pointer;
 }
 .homemenu a {
@@ -51,7 +52,6 @@ ul.dropdownmenu {
   width:auto;
   text-align:center;
   display:inline-block;
-  float:right;
   cursor:pointer;
 }
 

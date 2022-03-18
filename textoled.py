@@ -1,4 +1,12 @@
+#!/usr/bin/env python3
+
+import sys
+sys.path.insert(0, "/home/pi/.local/lib/python3.7/site-packages")
+print(sys.path)
+import getpass
+print("USER:",getpass.getuser())
 import board
+
 import digitalio
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_ssd1306

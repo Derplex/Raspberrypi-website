@@ -21,16 +21,16 @@
 
 
     function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
     }
+    $a=test_input($_REQUEST['inhoud']);
 
-    $a=test_input($_REQUEST["status"]);
-    Print_r($a);
     if ($a){
-      passthru("python3 textoled.py $b");
+      passthru("/home/pi/textoled.py \"$a\" 2>&1",$error);
+      Print_r($a);
     }
 
      ?>
