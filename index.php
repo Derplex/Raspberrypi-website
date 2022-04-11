@@ -7,6 +7,21 @@
 <link rel="stylesheet" href="/test/Raspberrypi-website/style.css">
 
 <style>
+.doos{
+  position:absolute;
+  margin-top:80px;
+  width:50px;
+  height:50px;
+  left:20%;
+  background-color:red;
+  animation-name:animatie;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:linear;
+}
+
+
 .flex{
   display:flex;
   width:90%;
@@ -19,6 +34,16 @@
 .flex > h1{
   width:60%;
 }
+@keyframes animatie{
+0% {background-color:red;left:20%}
+20% {background-color:orange;left:32%}
+40% {background-color:yellow;left:44%}
+60% {background-color:green;left:56%}
+80% {background-color:blue;left:68%}
+100% {background-color:purple;left:80%}
+}
+
+
 </style>
 
 
@@ -44,8 +69,10 @@
 
 </div>
 
-  <p class="centreren" style="font-size:25px;text-align:center">Dit is ons denkkracht project</p>
-  <p class="centreren" style="font-size:25px;text-align:center">Wij zijn Dario Schmidt en Ruben Jochemsen</p>
-  <p class="centreren" style="font-size:25px;text-align:center">We hebben een website gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
-  <p class="centreren" style="font-size:25px;text-align:center">Ook hebben we de website een aantal andere functionaliteiten gegeven</p>
+  <p class="centreren" style="font-size:20px;text-align:center">Dit is ons denkkracht project</p>
+  <p class="centreren" style="font-size:20px;text-align:center">Wij zijn Dario Schmidt en Ruben Jochemsen</p>
+  <p class="centreren" style="font-size:20px;text-align:center">We hebben een website gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
+  <p class="centreren" style="font-size:20px;text-align:center">Ook hebben we de website een aantal andere functionaliteiten gegeven</p>
+  <div class="doos">
+  </div>
 </body>
