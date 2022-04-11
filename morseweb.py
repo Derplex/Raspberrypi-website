@@ -3,6 +3,7 @@
 import time
 import sys
 import RPi.GPIO as GPIO
+from locking import lock,unlock,getlockstatus
 
 morse=21
 #led = LED(21)
@@ -49,61 +50,68 @@ letters = {
 "0":[1,1,1,1,1]
 }
 
-def lock():
-    f=open("/home/pi/morsebezig.txt","w")
-    f.write("bezig")
-    f.close()
 
-def unlock():
-    f=open("/home/pi/morsebezig.txt","w")
-    f.write("klaar")
-    f.close()
 
 GPIO.setmode(GPIO.BCM)    
 
 def initialize():
-  # Use BCM GPIO references
+  morse=21
 
-  # Set all pins as output
+
   for pin in [morse]:
-      if GPIO.gpio_function(pin)==GPIO.OUT:
-          return False
+
       GPIO.setup(pin,GPIO.OUT)
       GPIO.output(pin, False)
-  return True
 
-def clean():
+
+
+
+def clean(morse):
     GPIO.cleanup((morse))
 
+def doemorse(tijd,textsplode):
+
+    for woord in textsplode:
+        for letter in woord:
+            try:
+                code=letters[letter]
+            except:
+                print(letter,'ken ik niet')
+                code=[]
+            print(letter,code)
+            for x in code:
+                GPIO.output(morse,True)
+                time.sleep(x*tijd)
+                GPIO.output(morse,False)
+                time.sleep(tijd)
+            time.sleep(2*tijd)
+            
+        time.sleep(4*tijd)
 
 
-def websiteuitvoer(text):
+
+def main(text):
     textsplode = str(text).lower().split()
     tijd=0.12
     print(textsplode)
-    
-    if initialize():
+   
+    if not (getlockstatus()):
+        lock()
+        initialize()
         print("ik doe het!")
-        for woord in textsplode:
-            for letter in woord:
-                try:
-                    code=letters[letter]
-                except:
-                    print(letter,'ken ik niet')
-                    code=[]
-                print(letter,code)
-                for x in code:
-                    GPIO.output(morse,True)
-                    time.sleep(x*tijd)
-                    GPIO.output(morse,False)
-                    time.sleep(tijd)
-                time.sleep(2*tijd)
-            time.sleep(4*tijd)
-        clean()
+        try:
+            doemorse(tijd,textsplode)
+        except:
+            unlock()
+            clean(21)
+        clean(21)
+        unlock()
     else:
         print("ik ben bezig")
     
         
+    
+    
 if __name__=='__main__':
-    websiteuitvoer(sys.argv[1])
+    main(sys.argv[1])
 

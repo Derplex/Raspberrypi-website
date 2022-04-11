@@ -1,3 +1,4 @@
+<nav>
 <ul class="dropdownmenu">
   <li class="homemenu"><a href="index.php">Home</a></li>
 
@@ -14,11 +15,13 @@
 
   <li class="drpdwnsch"><a href="school.php">School</a>
   <div class="school">
-    <a href="cijfer.php">Cijfer berekenen</a>
+    <a href="cijfer.php">Te halen cijfer berekenen</a>
     <a href="gemiddelde.php">Gemiddelde berekenen</a>
   </div>
   </li>
 
+
   <li class="about"><a href="about.php">About</a></li>
 
 </ul>
+</nav>

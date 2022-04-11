@@ -6,16 +6,17 @@
 <link rel="stylesheet" href="style.css">
 
 </header>
-<body>
+<body style="margin:0px 0px">
   <?php include "menudeel.php"?>
 
   <h2 class="subtitel">Hier kan je een text omzetten naar morse</h2>
 
-
+  <div style="text-align:center">
   <form method="post" >
-    <input type="text" name="morse" class="input"></input><br>
-    <input type="submit" class="input"></input>
+    <input class="input" type="text" name="morse" class="input"></input><br>
+    <input class="input" type="submit" class="input"></input>
   </form>
+  </div>
 
   <?php
 

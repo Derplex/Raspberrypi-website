@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="style.css">
 
 </header>
-<body>
+<body style="margin:0px 0px">
   <?php include "menudeel.php"?>
-  <h2>Dit is een scherm (met de raspberry aangestuurd 64x128 oled schermpje)</h2>
+  <h2 class="subtitel">Dit is een scherm (met de raspberry aangestuurd 64x128 oled schermpje)</h2>
 
 
-
+  <div style="text-align:center">
     <form method="post" >
-      <input type="text" name="inhoud"></input><br>
-      <input type="submit" name="submit"></input>
+      <input class="input" type="text" name="inhoud"></input><br>
+      <input class="input" type="submit" name="submit"></input>
     </form>
-
+  </div>
     <?php
 
 

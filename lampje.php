@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="style.css">
 
 </header>
-<body>
+<body style="margin:0px 0px">
   <?php include "menudeel.php"?>
 
   <h2 class="subtitel">Dit is een lampje</h2>
 
-
+  <div style="text-align:center">
   <form method="post" >
-    <input type="submit" name="status" value="aan">
-    <input type="submit" name="status" value="uit">
+    <input class="input" type="submit" name="status" value="aan">
+    <input class="input" type="submit" name="status" value="uit">
   </form>
-
+  </div>
   <?php
 
 

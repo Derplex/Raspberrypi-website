@@ -4,14 +4,26 @@
 <header>
 <title>home</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/test/Raspberrypi-website/style.css">
+
+<style>
+.flex{
+  display:flex;
+  width:90%;
+  margin-left:5%;
+}
+.flex > div{
+  width:20%;
+  justify-content:center;
+}
+.flex > h1{
+  width:60%;
+}
+</style>
+
 
 </header>
-<body>
-
-
-
-
+<body style="margin:0px 0px">
 <!-- HIER KOMT DE DROPDOWN MENU"-->
 <?php include "menudeel.php" ?>
 
@@ -23,16 +35,17 @@
 </script>
 <!-- of je kan javascript van een bestand hier krijgen:-->
 <script type="text/javascript" src="javascript.js"></script>
-  <svg class="titel" viewBox="0 0 1000 200">
-  <path id="curve" d="M 350 120 Q 500 30 650 120" />
-  <text width="500">
-    <textPath xlink:href="#curve" style="font-size:60px;color:red;">
-      Denkkracht
-    </textPath>
-  </text>
-  </svg>
 
-  <p class="centreren" style="text-align:center">Dit is ons denkkracht project</p>
-  <p class="centreren" style="text-align:center">We hebben een website gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
-  <p class="centreren" style="text-align:center">Ook hebben we een aantal andere functionaliteiten aan de website gegeven</p>
+
+<div class="flex">
+  <div><img src="raspboard.jpg" alt="raspberry pi bord" style="margin-top:44.725px" width="100%"></div>
+  <h1 style="text-align:center;font-size:80px">Denkkracht</h1>
+  <div><img src="websitelogo.png" alt="website" style="margin:40px 20px" width="80%"></div>
+
+</div>
+
+  <p class="centreren" style="font-size:25px;text-align:center">Dit is ons denkkracht project</p>
+  <p class="centreren" style="font-size:25px;text-align:center">Wij zijn Dario Schmidt en Ruben Jochemsen</p>
+  <p class="centreren" style="font-size:25px;text-align:center">We hebben een website gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
+  <p class="centreren" style="font-size:25px;text-align:center">Ook hebben we de website een aantal andere functionaliteiten gegeven</p>
 </body>

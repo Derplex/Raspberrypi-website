@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="style.css">
 
 </header>
-<body>
+<body style="margin:0px 0px">
   <?php include "menudeel.php"?>
-  <h1>Dit is voor de Raspberry</h1>
+  <img src="rasplogo.png" alt="raspberry pi" style="margin-left:45%;margin-right:45%;margin-top:10px" width="10%" height="auto"</img>
+  <h1 class="centreren" style="font-size:70px">Raspberry pi</h1>
 
 </body>

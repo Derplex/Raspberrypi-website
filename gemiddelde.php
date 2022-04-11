@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="style.css">
 
 </header>
-<body>
+<body style="margin:0px 0px">
   <?php include "menudeel.php"?>
   <h2 class="subtitel">Je gemiddelde precies berekenen</h2>
 
