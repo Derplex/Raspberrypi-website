@@ -110,7 +110,7 @@
       wegging = Number(document.getElementById('wegvolgpw').value)
       wegingen = wegingen + wegging
       doel = document.getElementById('doel').value
-      var antwoordjava = ((doel * wegingen)-cijfers)/wegging
+      var antwoordjava = Math.round((((doel * wegingen)-cijfers)/wegging)*100)/100
       if (antwoordjava < 1){
         document.getElementById('antwoord').innerHTML = 'Je gaat sowieso je doel halen! Je zou namelijk een ' +antwoordjava+' moeten halen.'
       } else if (antwoordjava > 10){

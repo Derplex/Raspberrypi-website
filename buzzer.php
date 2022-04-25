@@ -13,8 +13,8 @@
 
   <div style="text-align:center">
     <form method="post" >
-      <input class="input" type="text" name="inhoud"></input><br>
-      <input class="input" type="submit" name="submit"></input>
+      <input class="input" type="button" name="inhoud" value="liedje"></input><br>
+      <input class="input" type="button" name="inhoud" value="toonladder"></input>
     </form>
   </div>
     <?php
@@ -27,22 +27,20 @@
       return $data;
     }
 
-    function scherm($status){
+    function buzzer($status){
       $ch = curl_init("http://192.168.2.24:5000/scherm/{$status}");
       curl_setopt($ch, CURLOPT_HEADER, 0);
       curl_setopt($ch, CURLOPT_POST, 0);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       $output = curl_exec($ch);
       curl_close($ch);
-
       //echo "x{$output}x";
     }
 
-
     $a=test_input($_REQUEST['inhoud']);
 
-    if ($a){
-      scherm($a);
+    if ($a){}
+      buzzer($a);
       Print_r($a);
     }
 

@@ -104,7 +104,7 @@
 
         wegingen = wegingen + wegging
 
-        var antwoordjava = cijfers/wegingen
+        var antwoordjava = Math.round((cijfers/wegingen)*100)/100
 
         document.getElementById('antwoord').innerHTML = 'Dit is wat je gemiddeld staat: ' +antwoordjava
 

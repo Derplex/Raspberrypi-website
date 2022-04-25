@@ -4,7 +4,7 @@
 <header>
 <title>home</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
-<link rel="stylesheet" href="/test/Raspberrypi-website/style.css">
+<link rel="stylesheet" href="style.css">
 
 <style>
 .doos{

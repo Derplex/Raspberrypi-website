@@ -22,16 +22,28 @@
 
 
   function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+
+  function mrslampje($status){
+    $ch = curl_init("http://192.168.2.24:5000/morse/{$status}");
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_POST, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $output = curl_exec($ch);
+    curl_close($ch);
+
+    //echo "x{$output}x";
   }
 
   $a=test_input($_REQUEST["morse"]);
   if ($a){
       $b= str_replace('_',' ',$a);
-      passthru("/home/pi/morseweb.py \"$b\"");
+      Print_r($b);
+      mrslampje($b);
   }
 
    ?>
