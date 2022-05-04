@@ -8,6 +8,7 @@
     <a href="lampje.php">Lampje</a>
     <a href="scherm.php">Scherm</a>
     <a href="mrslampje.php">Morse</a>
+    <a href="buzzer.php">Buzzer</a>
     <a href="temperatuur.php">Temperatuur</a>
   </div>
   </li>

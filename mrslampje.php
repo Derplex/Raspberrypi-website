@@ -28,7 +28,7 @@
     return $data;
   }
 
-  function mrslampje($status){
+  function mrslampje($status) {
     $ch = curl_init("http://192.168.2.24:5000/morse/{$status}");
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_POST, 0);
@@ -40,7 +40,8 @@
   }
 
   $a=test_input($_REQUEST["morse"]);
-  if ($a){
+
+  if ($a) {
       $b= str_replace('_',' ',$a);
       Print_r($b);
       mrslampje($b);

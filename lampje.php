@@ -1,4 +1,4 @@
-<?php ini_set('display_errors', 1); ini_set('display_startup_errors', 1);error_reporting(E_ALL);?>
+<?php //ini_set('display_errors', 1); ini_set('display_startup_errors', 1);error_reporting(E_ALL);?>
 <html lang=nl-NL>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <header>
@@ -51,7 +51,7 @@
 } else if ($a=="uit"){
     lampje($a);
 } else {
-  echo "<script>alert(\"dont try to hack me\")</script>";
+
 }
 
 

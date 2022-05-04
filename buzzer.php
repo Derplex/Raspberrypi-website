@@ -1,7 +1,7 @@
 <html lang=nl-NL>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <header>
-<title>schermpje</title>
+<title>buzzer</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
 
@@ -13,12 +13,15 @@
 
   <div style="text-align:center">
     <form method="post" >
-      <input class="input" type="button" name="inhoud" value="liedje"></input><br>
-      <input class="input" type="button" name="inhoud" value="toonladder"></input>
+      <input class="input" type="submit" name="inhoud" value="liedje"></input><br>
+      <input class="input" type="submit" name="inhoud" value="toonladder"></input>
     </form>
   </div>
-    <?php
 
+
+
+
+<?php
 
     function test_input($data) {
       $data = trim($data);
@@ -28,7 +31,7 @@
     }
 
     function buzzer($status){
-      $ch = curl_init("http://192.168.2.24:5000/scherm/{$status}");
+      $ch = curl_init("http://192.168.2.24:5000/buzzer/{$status}");
       curl_setopt($ch, CURLOPT_HEADER, 0);
       curl_setopt($ch, CURLOPT_POST, 0);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -39,7 +42,7 @@
 
     $a=test_input($_REQUEST['inhoud']);
 
-    if ($a){}
+    if ($a){
       buzzer($a);
       Print_r($a);
     }
