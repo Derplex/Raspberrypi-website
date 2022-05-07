@@ -11,7 +11,7 @@
   <h2 style="text-align:center;font-size:9vmin">Dit is de laatst gemeten temperatuur</h2>
   <p style="text-align:center;font-size:4vmin;margin-top:80px">
   <?php
-  passthru("tail -n 1 temperaturen.txt");
+  passthru("tail -n 1 /home/pi/temperaturen.txt");
   ?>
   </p>
 
