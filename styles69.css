@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+ body {
+	 color: grey;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+}
+canvas {
+    border: 2px solid grey;
+}
