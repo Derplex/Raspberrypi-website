@@ -11,6 +11,9 @@ html, body {
     justify-content: center;
 	flex-direction: column;
 }
+.dropdownmenu{
+  background-color:grey;
+}
 canvas {
     border: 2px solid grey;
 }

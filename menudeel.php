@@ -1,9 +1,9 @@
 <nav>
 <ul class="dropdownmenu">
-  <li class="homemenu"><a href="index.php">Home</a></li>
+  <li><a href="index.php">Home</a></li>
 
 
-  <li class="drpdwnrasp"><a href="raspberry.php">Raspberry</a>
+  <li><a href="raspberry.php">Raspberry</a>
   <div class="raspberry">
     <a href="lampje.php">Lampje</a>
     <a href="scherm.php">Scherm</a>
@@ -13,17 +13,20 @@
   </div>
   </li>
 
-
-
-  <li class="drpdwnsch"><a href="school.php">School</a>
+  <li><a href="school.php">School</a>
   <div class="school">
     <a href="cijfer.php">Te halen cijfer berekenen</a>
     <a href="gemiddelde.php">Gemiddelde berekenen</a>
   </div>
   </li>
 
+  <li><a href="games.php">Games</a>
+  <div class="games">
+    <a href="snake.php">Snake</a>
+  </div>
+  </li>
 
-  <li class="about"><a href="about.php">About</a></li>
+  <li><a href="about.php">About</a></li>
 
 </ul>
 </nav>

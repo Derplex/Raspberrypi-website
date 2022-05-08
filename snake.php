@@ -2,8 +2,11 @@
 <html>
 <head>
   <title>Mini-Snake Game</title>
+  <link href="style.css" rel="stylesheet">
   <link href="styles69.css" rel="stylesheet">
+
 </head>
+<?php include "menudeel.php" ?>
 <body>
 <h1 id="highScore">Highscore: 0</h1>
 <h1 id="score">Score: 0</h1>
