@@ -86,7 +86,9 @@ function loop() {
 //appel laten zien
   context.fillStyle = 'red';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
+
 //elk blokje van slang laten zien
+//MISSCHIEN ZOUDEN WE DE KOP EEN ANDERE KLEUR KUNNEN GEVEN?
   context.fillStyle = 'green';
   snake.cells.forEach(function(cell, index) {
     // het blokje kleuren
@@ -118,7 +120,7 @@ function loop() {
         snake.dy = 0;
 
         //highscore updaten zo nodig
-        //misschien een overal highscore/leaderboard maken?
+        //misschien een overal highscore/leaderboard maken?   -> HANDIG:   window.prompt() OF prompt() OM DE NAAM TE KRIJGEN
     		if (Score > highScore){
     			highScore = Score;
     			document.getElementById("highScore").innerHTML = "Highscore: " + Score;
