@@ -71,8 +71,7 @@
 
   <p class="centreren" style="font-size:20px;text-align:center">Dit is ons denkkracht project</p>
   <p class="centreren" style="font-size:20px;text-align:center">Wij zijn Dario Schmidt en Ruben Jochemsen</p>
-  <p class="centreren" style="font-size:20px;text-align:center">We hebben een website gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
-  <p class="centreren" style="font-size:20px;text-align:center">Ook hebben we de website een aantal andere functionaliteiten gegeven</p>
-  <div class="doos">
+  <p class="centreren" style="font-size:20px;text-align:center">We hebben een <strong>website</strong> gemaakt waarmee je een paar handelingen op een <strong>Raspberry pi</strong> kunt uitvoeren</p>
+  <p class="centreren" style="font-size:20px;text-align:center">Ook hebben we de website een aantal andere <strong>functionaliteiten</strong> gegeven</p>
   </div>
 </body>

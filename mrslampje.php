@@ -4,7 +4,26 @@
 <title>morse</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
-
+<style>
+input.input {
+  margin:20px;
+  background-color:white;
+  color:black;
+  width:240px;
+  font-size:20px;
+  height:30px;
+  border: 2px solid blue;
+}
+input.submit{
+  margin:20px;
+  background-color:blue;
+  color:white;
+  width:auto;
+  font-size:20px;
+  height:35px;
+  border: 2px solid red;
+}
+</style>
 </header>
 <body style="margin:0px 0px">
   <?php include "menudeel.php"?>
@@ -14,7 +33,7 @@
   <div style="text-align:center">
   <form method="post" >
     <input class="input" type="text" name="morse" class="input"></input><br>
-    <input class="input" type="submit" class="input"></input>
+    <input class="submit" type="submit" class="input"></input>
   </form>
   </div>
 
@@ -43,7 +62,7 @@
 
   if ($a) {
       $b= str_replace('_',' ',$a);
-      Print_r($b);
+      //Print_r($b);
       mrslampje($b);
   }
 

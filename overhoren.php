@@ -74,7 +74,7 @@ const vragen=[
 ["ago","egi","actum","drijven, handelen, gebeuren (pass)"]];
 
 const soortvragen = ["praes","pf","ppp","vert"];
-const vraagadds = ["Wat is de 1e pers ev praesens van ","Wat is de 1e pers ev perfectum van", "Wat is de nom onz ppp van ",
+const vraagadds = ["Wat is de 1e pers ev praesens van ","Wat is de 1e pers ev perfectum van ", "Wat is de nom onz ppp van ",
 "Wat is de vertaling van "];
 const soortvraag = new Map();
 var vraagindex;
@@ -107,86 +107,92 @@ function diffrandnumbers(min,max,amount){
 
 
 
-function start(){
-  const startbtn = document.getElementById("startbutton");
-  const submitbtn = document.getElementById("submitbutton");
-  const textfield = document.getElementById("inputfield");
-  const score = document.getElementById("score");
-  alert(vragen);
-  score.classList.remove("hide");
-  submitbtn.classList.remove("hide");
-  textfield.classList.remove("hide")
-  startbtn.classList.add("hide");
-  stelvraag();
 
-}
-
-
-function checkinput(){
-  //submit is zichtbaar
-  const textfield = document.getElementById("inputfield");
-  const nextbtn = document.getElementById("nextbutton");
-  const submitbtn = document.getElementById("submitbutton");
-
-
-  var input = textfield.value;
-  //window.alert(input);
-  if (input==""){
-    alert("Voer ten minste iets in...");
-  } else{
-    if (input==vragen[vraagindex]){
-      alert("Correct!");
-    } else {
-      alert("fout");
-    }
-
-    submitbtn.classList.add("hide");
-    nextbtn.classList.remove("hide");
-    textfield.classList.add("hide");
-  }
-  textfield.value="";
-}
-
-
-
-function stelvraag(){
-  //next is zichtbaar
-  const vragen=[
-  ["accipio","accepi","acceptum","ontvangen, vernemen"],
-  ["ago","egi","actum","drijven, handelen, gebeuren (pass)"]];
-
-  const nextbtn = document.getElementById("nextbutton");
-  const submitbtn = document.getElementById("submitbutton");
-  const pvraag = document.getElementById("vraag");
-  const textfield = document.getElementById("inputfield");
-
-  textfield.classList.remove("hide");
-  nextbtn.classList.add("hide");
-  submitbtn.classList.remove("hide");
-
-
-  vraagindex = Math.floor(Math.random()*(vragen.length+1));
-  tworandnums = diffrandnumbers(1,soortvragen.length,2);
-  soortvraag.clear();
-  soortvraag.set(tworandnums[0],tworandnums[1]);
-  tworandnums=[];
-  pvraag.innerHTML = vraagadds[1]+ vragen[vraagindex][0];
-
-}
-
-document.addEventListener("keydown", function(event) {
-  if (event.keyCode === 13) {
-      checkinput();
-  }
-});
 </script>
 
 
 </header>
+
+
 <body style="margin:0px 0px">
   <?php include "menudeel.php" ?>
 
+  <script>
 
+  function start(){
+    const startbtn = document.getElementById("startbutton");
+    const submitbtn = document.getElementById("submitbutton");
+    const textfield = document.getElementById("inputfield");
+    const score = document.getElementById("score");
+    alert(vragen);
+    score.classList.remove("hide");
+    submitbtn.classList.remove("hide");
+    textfield.classList.remove("hide")
+    startbtn.classList.add("hide");
+    stelvraag();
+
+  }
+
+
+  function checkinput(){
+    //submit is zichtbaar
+    const textfield = document.getElementById("inputfield");
+    const nextbtn = document.getElementById("nextbutton");
+    const submitbtn = document.getElementById("submitbutton");
+
+
+    var input = textfield.value;
+    //window.alert(input);
+    if (input==""){
+      alert("Voer ten minste iets in...");
+    } else{
+      if (input==vragen[vraagindex]){
+        alert("Correct!");
+      } else {
+        alert("fout");
+      }
+
+      submitbtn.classList.add("hide");
+      nextbtn.classList.remove("hide");
+      textfield.classList.add("hide");
+    }
+    textfield.value="";
+  }
+
+
+
+  function stelvraag(){
+    //next is zichtbaar
+    const vragen=[
+    ["accipio","accepi","acceptum","ontvangen, vernemen"],
+    ["ago","egi","actum","drijven, handelen, gebeuren (pass)"]];
+
+    const nextbtn = document.getElementById("nextbutton");
+    const submitbtn = document.getElementById("submitbutton");
+    const pvraag = document.getElementById("vraag");
+    const textfield = document.getElementById("inputfield");
+
+    textfield.classList.remove("hide");
+    nextbtn.classList.add("hide");
+    submitbtn.classList.remove("hide");
+
+
+    vraagindex = Math.floor(Math.random()*(vragen.length+1));
+    tworandnums = diffrandnumbers(1,soortvragen.length,2);
+    soortvraag.clear();
+    soortvraag.set(tworandnums[0],tworandnums[1]);
+    tworandnums=[];
+    pvraag.innerHTML = vraagadds[1]+ vragen[vraagindex][0];
+
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        checkinput();
+    }
+  });
+
+  </script>
 
 
   <div>

@@ -8,7 +8,7 @@
 </header>
 <body style="margin:0px 0px">
   <?php include "menudeel.php"?>
-  <h2 class="subtitel">Hier kan je berekenen welk cijfer je moet halen in je volgende toets om een bepaald gemiddelde te staan</h2>
+  <h2 class="subtitel">Hier kan je berekenen welk cijfer je moet halen in je volgende toets om een gewenst gemiddelde te staan</h2>
 
 
   <div style="margin-top:20px;float:center">

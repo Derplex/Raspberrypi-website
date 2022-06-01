@@ -5,12 +5,22 @@
 <title>lampje</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
-
+<style>
+input {
+  margin:20px;
+  background-color:blue;
+  color:white;
+  width:80px;
+  font-size:30px;
+  height:50px;
+  border: 2px solid red;
+}
+</style>
 </header>
 <body style="margin:0px 0px">
   <?php include "menudeel.php"?>
 
-  <h2 class="subtitel">Dit is een lampje</h2>
+  <h1 style="margin:100px;" class="subtitel">Dit is een lampje</h1>
 
   <div style="text-align:center">
   <form method="post" >

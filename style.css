@@ -2,12 +2,12 @@ body {
   background-color:white;
   margin: 0px 0px;
 }
-
-
-.input {
-  text-align:center;
-  margin:auto;
+input {
+  margin:20px;
+  border: 5px solid green;
 }
+
+
 .titel {
   text-align:center;
 

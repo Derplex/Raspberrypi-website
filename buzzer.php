@@ -4,16 +4,26 @@
 <title>buzzer</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
-
+<style>
+input.input{
+  margin:20px;
+  background-color:blue;
+  color:white;
+  width:auto;
+  font-size:20px;
+  height:35px;
+  border: 2px solid red;
+}
+</style>
 </header>
 <body style="margin:0px 0px">
   <?php include "menudeel.php"?>
   <h2 class="subtitel">Dit is een scherm (met de raspberry aangestuurd 64x128 oled schermpje)</h2>
 
 
-  <div style="text-align:center">
+  <div style="display:flex;justify-content:center;">
     <form method="post" >
-      <input class="input" type="submit" name="inhoud" value="liedje"></input><br>
+      <input class="input" type="submit" name="inhoud" value="liedje"></input>
       <input class="input" type="submit" name="inhoud" value="toonladder"></input>
     </form>
   </div>
@@ -44,7 +54,7 @@
 
     if ($a){
       buzzer($a);
-      Print_r($a);
+      //Print_r($a);
     }
 
      ?>

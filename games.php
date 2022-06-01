@@ -5,18 +5,27 @@
 <title>games</title>
 <!-- HIER MOETEN WE DE CSS IN DOEN:-->
 <link rel="stylesheet" href="style.css">
-
+<style>
+div.raspberrylijst > li > a {
+  color: black;
+  list-style-type:none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+</style>
 </header>
 <body style="margin:0px 0px">
   <?php include "menudeel.php" ?>
-  <div>
-    <img src="huygenslogo.png" alt="Huygens lyceum logo" style="margin-top:10px;margin-left:45%;margin-right:45%" width="10%" height="auto"></img>
-    <h1 class="centreren" style="font-size:70px">School</h1>
-  </div>
-  <p class="centreren">We hebben ook een paar games gemaakt, namelijk:</p>
-  <ul>
-  <li>
-    <a href="snake.php">Snake</a>
-  </li>
-</ul>
+  <h1 class="centreren" style="font-size:90px;color:red;">GAMES</h1>
+  <div style="display:flex;justify-content:center;align-items:center;flex-direction: column;">
+    <p style="font-size:25px" class="centreren">We hebben ook een paar games gemaakt, namelijk:</p>
+    <ul>
+      <div class="raspberrylijst">
+      <li><a href="snake.php">Snake</a></li>
+
+    </div>
+    </ul>
+</div>
 </body>
