@@ -23,6 +23,8 @@
   <li><a href="games.php">Games</a>
   <div class="games">
     <a href="snake.php">Snake</a>
+    <a href="pong.php">Pong</a>
+    <a Href="tetris.php">Tetris</a>
   </div>
   </li>
 

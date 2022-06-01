@@ -13,6 +13,7 @@ div.raspberrylijst > li > a {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size:20px;
 }
 </style>
 </header>
@@ -24,8 +25,9 @@ div.raspberrylijst > li > a {
     <ul>
       <div class="raspberrylijst">
       <li><a href="snake.php">Snake</a></li>
-
-    </div>
+      <li><a href="pong.php">Pong</a></li>
+      <li><a href="tetris.php">Tetris</a></li>
+      </div>
     </ul>
 </div>
 </body>

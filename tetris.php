@@ -3,6 +3,7 @@
 <head>
   <title>Basic Tetris HTML Game</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <style>
   html, body {
     height: 100%;
@@ -21,7 +22,7 @@
   }
   </style>
 </head>
-<body>
+<body style="display:flex;justify-content:center;flex-direction:column;">
 <?php include "menudeel.php" ?>
 <canvas width="320" height="640" id="game"></canvas>
 <script>

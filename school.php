@@ -13,6 +13,7 @@ div.raspberrylijst > li > a {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size:20px;
 }
 </style>
 </header>
